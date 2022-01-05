@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=4
+
 def check_if_palindrome(num: int) -> bool:
     str_num = str(num)
     left, right = 0, len(str_num)-1
