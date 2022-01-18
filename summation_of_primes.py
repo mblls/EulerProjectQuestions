@@ -21,9 +21,9 @@ def find_sum_of_primes_below_n(n: int) -> int:
                 potential_primes[j] = False
     # 1 is not prime.
     potential_primes[1] = False
-    for key, value in potential_primes.items():
-        if value:
-            sum_of_primes += key
+    for num, is_prime in potential_primes.items():
+        if is_prime:
+            sum_of_primes += num
     return sum_of_primes
 
 
