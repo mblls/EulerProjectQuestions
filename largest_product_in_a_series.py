@@ -3,6 +3,7 @@ from functools import reduce  # Required for Python 3.*
 import operator
 
 
+# Simple multiplication function.
 def prod(iterable: list()) -> int:
     return reduce(operator.mul, iterable)
 

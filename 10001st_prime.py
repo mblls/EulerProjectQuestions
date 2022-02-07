@@ -1,5 +1,7 @@
 # https://projecteuler.net/problem=7
 
+
+# Brute force.
 def is_prime(num: int) -> bool:
     # We can speed up runtime by ignoring multiples of 2.
     if num % 2 == 0:
@@ -20,5 +22,6 @@ def find_nth_prime(n: int) -> int:
         if is_prime(num):
             primes_found += 1
     return num
+
 
 print(find_nth_prime(6))
